@@ -1,38 +1,144 @@
 .App {
+  display: flex;
+  position: relative;
+  /*background-image: url("https://image.freepik.com/free-vector/sketch-set-hen-chick-eggs-hand-drawn-realistic-chicken-ink-engraved-graphic-illustration-little-bird-chicken-eggs_152222-172.jpg");*/
+  /*background-size: contain;*/
+  /*background-position: center;*/
+  /*background-blend-mode: saturation;*/
+  width: 100%;
+  height: 98vh;
+
+}
+.backGround{
+  overflow: hidden;
+  position: absolute;
+  display: flex;
+  top: 0;
+  left:0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4
+}
+.backGround img{
+
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+
+}
+.box{
+  margin: 10px;
+  position: relative;
+  width: 100%;
+  height: 200px;
+
+}
+.box2{
+  display: flex;
+  flex-direction: column;
   text-align: center;
-}
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  position: relative;
+  width: 100%;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.boxBackGround{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  background-color: #49941f;
+  box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7),
+  -1px 2px 20px rgba(255, 255, 255, 0.6) inset;
+  z-index: -1;
+}
+.twoHolder{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+}
+.column{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.block1{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 10px 20px;
+  background-color: #49941f;
+  margin: 10px;
+  box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7),
+  -1px 2px 20px rgba(255, 255, 255, 0.6) inset;
+  opacity: 0.75;
+}
+.hatcheryHolder{
+  display: flex;
+
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 90%;
+
+}
+.hatcheryBlock10{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin: 10px;
+  opacity: 0.75;
+
+  width: 90%;
+  justify-content: center;
+  background-color: #49941f;
+  box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7),
+  -1px 2px 20px rgba(255, 255, 255, 0.6) inset;
 }
 
-.App-link {
-  color: #61dafb;
+.eggHolder{
+  width: 100px;
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+  padding: 5px;
+  background-color: #0a3b02;
+  opacity: 0.9;
+  box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7),
+  -1px 2px 20px rgba(255, 255, 255, 0.6) inset;
+  font-weight: bold;
+  font-size: 10px;
+}
+.eggHolder img{
+  width: 80px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.flexWrap{
+  display: flex;
+  flex-wrap: wrap;
+}
+.empty{
+  height: 22px;
+}
+.btn{
+  background-color: #4ea23e;
+  opacity: 0.9;
+  box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7),
+  -1px 2px 20px rgba(255, 255, 255, 0.6) inset;
+
 }
